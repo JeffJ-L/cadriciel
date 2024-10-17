@@ -1,0 +1,150 @@
+@import url('curiculum.css');
+@import url('contact.css');
+@import url('portfolio.css');
+@import url('contact-resume.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+.mots-rouge {
+    color: red;
+}
+
+h2{
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+    min-height: 20vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(245, 245, 245);
+}
+
+nav a {
+    text-decoration: none;
+    margin-bottom: 5px;
+    color: gray;
+    transition: color .20s ease-in-out, text-decoration .20s ease-in-out;
+}
+
+nav a:hover {
+    color: red;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: rgb(199, 199, 199);
+}
+
+
+header {
+    background-image: url("/assets/img/header-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+}
+
+.header-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+blockquote {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.7rem;
+    color: rgb(250, 250, 250);
+    background-color: hsl(0, 17%, 20%);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+blockquote::before{
+    content: open-quote;
+    color: white;
+}
+
+blockquote::after{
+    content: close-quote;
+    color: white;
+}
+
+.intro {
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+.intro h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+}
+
+.presentation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    justify-items: center;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.presentation p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.programmation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    justify-items: center;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.programmation p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    margin-top: 20px;
+    background-color: rgb(245, 245, 245);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer p {
+    white-space: nowrap;
+}
+
+footer .reseaux {
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+}
+
+footer .reseaux img {
+    width: 30px;
+}

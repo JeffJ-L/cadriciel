@@ -1,0 +1,47 @@
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    height: 100%;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    min-height: 1px;
+    object-fit: cover;
+    display: none;
+}
+
+img.displaySlide {
+    display: block;
+    animation: fade 0.9s;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.previous {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
